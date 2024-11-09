@@ -1,0 +1,100 @@
+/* Footer CSS */
+
+.footer {
+    background-color: var(--dark-layer-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--white-color);
+}
+
+.footer-contact {
+    text-align: left; 
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    color: var(--white-color);
+
+}
+
+.footer-center {
+    text-align: center; 
+    flex: 1; 
+}
+
+.footer-center p {
+    margin: 0;
+    color: var(--white-color);
+}
+
+.footer-center p a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-nav {
+    text-align: right; 
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+/* Scroll Top */
+.scroll_top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+    cursor: pointer;
+    width: 2.8571rem;
+    height: 2.8571rem;
+    line-height: 3.5rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+
+.scroll_top svg {
+    text-align: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.scroll_top svg path {
+    fill: var(--white-color);
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact, .footer-nav, .footer-center {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
